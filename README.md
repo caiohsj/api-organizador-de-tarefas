@@ -23,7 +23,10 @@ To run the application in development, you can run these commands
 
 ```bash
 cd [my-app-name]
+open app/settings.php and configure the data from your database
+execute db.php in the cmd
 composer start
+now consume this api
 ```
 
 Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
