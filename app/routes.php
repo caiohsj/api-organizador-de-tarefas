@@ -17,7 +17,6 @@ return function (App $app) {
         $tarefas = Task::get();
         $jsonTarefas = json_encode($tarefas);
         $response->getBody()->write($jsonTarefas);
-        header("Access-Control-Allow-Origin: *");
         return $response->withHeader('Content-Type', 'application/json');
     });
 
